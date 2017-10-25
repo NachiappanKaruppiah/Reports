@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: .,
+ lib/poi-ooxml-3.9.jar,
+

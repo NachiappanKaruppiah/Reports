@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Hello</title>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="stylesheet" href="style.css" type="text/css"/>
+         
+         
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class ="row" style="text-align: center">
+            <h3 style="text-align: center"> Choose File to Upload</h3>
+            <div style="width: 20%; margin: 35px auto;">
+            <form method="POST" action="servlet/fileupload1" enctype="multipart/form-data">
+            <input style="text-align: center" type="file" name="file" id="file" /> <br/>
+            <input style="text-align: center" type="submit" class="btn btn-lg btn-primary btn-block" value="Upload"  id="upload" />
+        </form>
+            </div>
+            
+        </div>
+        
+         <canvas id="myChart" width="50" height="50"></canvas>
+         
+    </body>
+</html>
