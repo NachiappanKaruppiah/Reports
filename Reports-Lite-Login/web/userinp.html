@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="stylesheet" href="style.css" type="text/css"/>
+
+         
+        <title>Reports-Lite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class ="row">
+            <h1 style="text-align: center">Please choose the following</h1>
+            <div style="width: 30%; margin: 25px auto;">
+            <form action="servlet/userchoice" method="post">
+                  <div class="form-group inner-addon left-addon">
+                     Choose the chart:
+                     <select name ="charttype">
+                        <option value="Bar">Bar</option>
+                        <option value="Pie">Pie</option>
+                        <option value="Line">Line</option>
+                     </select>
+                     Choose column1:
+                     <select name ="colnum1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                     </select>
+                     Choose column2:
+                     <select name ="colnum2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                     </select>
+                  </div>
+                  
+                  <div class="form-group">
+                      <input id='submit' class="btn btn-lg btn-primary btn-block"  type="submit" value="Download chart">
+                  </div>
+            </form>
+            </div>
+
+        </div>
+    </body>
+</html>

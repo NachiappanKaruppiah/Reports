@@ -16,6 +16,10 @@
         <servlet-name>fileupload1</servlet-name>
         <servlet-class>fileupload1</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>userchoice</servlet-name>
+        <servlet-class>userchoice</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>register</servlet-name>
         <url-pattern>/servlet/register</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>fileupload1</servlet-name>
         <url-pattern>/servlet/fileupload1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userchoice</servlet-name>
+        <url-pattern>/servlet/userchoice</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

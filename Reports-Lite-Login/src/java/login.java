@@ -28,6 +28,8 @@ public class login extends HttpServlet {
        PrintWriter out = response.getWriter();
        String user = request.getParameter("username");
        String pwd = request.getParameter("password");
+       /*String qw = request.getParameter("qwerty");
+       System.out.println(qw+"ohhhh");*/
        Connection connection;
        try{
            Class.forName("org.postgresql.Driver");
@@ -44,7 +46,9 @@ public class login extends HttpServlet {
                     PrintWriter out1 = response.getWriter();  
                 response.setContentType("text/html");  
                 out1.println("<script type=\"text/javascript\">");  
-                //out1.println("alert('Successfully Registered!!! Login to continue');");  
+                //out1.println("alert('Successfully Registered!!! Login to continue');"); 
+                //out1.println("sessionStorage.setItem(\"ussser\",document.getElementById(\"nachi\"));");
+                //out1.println("alert(sessionStorage.getItem(\"ussser\"));");
                 out1.println("location = '/Reports-Lite-Login/welcome.html';");
                 out1.println("</script>");
                 

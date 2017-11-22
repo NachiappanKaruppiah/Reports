@@ -24,14 +24,17 @@ and open the template in the editor.
             <h3 style="text-align: center"> Choose File to Upload</h3>
             <div style="width: 20%; margin: 35px auto;">
             <form method="POST" action="servlet/fileupload1" enctype="multipart/form-data">
-            <input style="text-align: center" type="file" name="file" id="file" /> <br/>
-            <input style="text-align: center" type="submit" class="btn btn-lg btn-primary btn-block" value="Upload"  id="upload" />
-        </form>
+                <div>
+                  <input style="text-align: center" type="file" name="file" id="file" /> <br/>
+                </div>
+                
+                <div>
+                 <input style="text-align: center" type="submit" class="btn btn-lg btn-primary btn-block" value="Upload"  id="upload" />
+                </div>
+            </form>
+                
             </div>
             
-        </div>
-        
-         <canvas id="myChart" width="50" height="50"></canvas>
-         
+        </div> 
     </body>
 </html>
